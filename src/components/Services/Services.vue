@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup>
 import { reactive } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -54,9 +54,9 @@ const breakpoints = reactive({
 
 <template>
     <section class="services">
-        <div class="services__title">
+        <h3 class="services__title">
             {{ $t('services.title') }}
-        </div>
+        </h3>
         <swiper :slidesPerView="'auto'" :centeredSlides="true" :spaceBetween="60" :pagination="{
             clickable: true,
         }" :modules="modules" :loop="true" class="services__swiper">

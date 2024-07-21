@@ -57,5 +57,27 @@
 			"text-3": "Wordpres sayt yasash",
 			"text-4": "Nolan veb-sayt yaratish"
 		}
+	},
+	"popular-services": {
+		"title": "Eng ko'p foydalaniladigan xizmatlar",
+		"service-1": {
+			"title": "Promo aksiya"
+		},
+		"service-2": {
+			"title": "So’rovnoma o’tkazish"
+		},
+		"service-3": {
+			"title": "Samakleyka yopishtirish"
+		},
+		"service-4": {
+			"title": "Flayerlar tarqatish"
+		}
+	},
+	"stats": {
+		"title": "Statistika",
+		"stats-1": "Aktiv hamkorlarimiz",
+		"stats-2": "Bajarilgan proyektlar",
+		"stats-3": "Mijozlar izohi",
+		"stats-4": "Umumiy tajriba ( yil )"
 	}
 }
