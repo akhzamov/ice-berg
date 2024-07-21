@@ -7,17 +7,22 @@ const router = createRouter({
 	history: createWebHistory(import.meta.env.VITE_BASE_URL),
 	routes: [
 		{
-			path: '/:locale?',
-			component: RouterView,
-			beforeEnter: Tr.routeMiddleware,
-			children: [
-				{
-					path: '',
-					name: 'home',
-					component: Home,
-				},
-			],
+			path: '/',
+			name: 'home',
+			component: Home,
 		},
+		// {
+		// 	path: '/:locale?',
+		// 	component: RouterView,
+		// 	beforeEnter: Tr.routeMiddleware,
+		// 	children: [
+		// 		{
+		// 			path: '',
+		// 			name: 'home',
+		// 			component: Home,
+		// 		},
+		// 	],
+		// },
 	],
 	scrollBehavior() {
 		return {

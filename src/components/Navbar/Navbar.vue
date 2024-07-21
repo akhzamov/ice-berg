@@ -16,7 +16,7 @@ const switchLanguage = ref(async (locale) => {
   const newLocale = locale;
   await Tr.switchLanguage(newLocale);
   try {
-    await router.replace({ params: { locale: newLocale } });
+    // await router.replace({ params: { locale: newLocale } });
     router.go(0);
   } catch (e) {
     console.log(e);
