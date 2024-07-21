@@ -1,0 +1,61 @@
+{
+	"locale": {
+		"ru": "Русский",
+		"uz": "O'zbekcha"
+	},
+	"navbar": {
+		"home": "Bosh sahifa",
+		"services": "Xizmatlar",
+		"about": "Biz haqimizda",
+		"contacts": "Kontaktlar"
+	},
+	"header-content": {
+		"title": "O'zbekistondagi professional reklama agentligi",
+		"application-button": "Ariza qoldirish",
+		"download-button": "Tijoriy taklifni yuklash"
+	},
+	"services": {
+		"title": "Xizmatlar",
+		"service-1": {
+			"title": "Flayerlar tarqatish",
+			"text-1": "Savdo markazlarida va ko'chalarda flyerlar tarqatish",
+			"text-2": "Maxsus tadbirlarda flyerlar tarqatish",
+			"text-3": "Flyerlarni ofislarga va uyga yetkazib berish",
+			"text-4": "Sizning logotipingiz va xabarlaringiz bilan flyerlarni dizayn qilish va chop etish"
+		},
+		"service-2": {
+			"title": "Samakleyka yopishtirish",
+			"text-1": "Do'kon vitrinalariga va transport vositalariga yopishtirish",
+			"text-2": "Reklama panolari va stendlarga yopishtirish",
+			"text-3": "Pod'yezd eshiklariga yopishtirish",
+			"text-4": "Sizning logotipingiz va xabarlaringiz bilan samakleykalarni dizayn qilish va chop etish"
+		},
+		"service-3": {
+			"title": "So’rovnoma o’tkazish",
+			"text-1": "Savdo markazlarida va ko'chalarda so'rovnomalar o'tkazish",
+			"text-2": "Maxsus tadbirlarda so'rovnomalar o'tkazish",
+			"text-3": "Telefon va onlayn so'rovlar",
+			"text-4": "Ma'lumotlarni tahlil qilish va qayta ishlash"
+		},
+		"service-4": {
+			"title": "Promo aksiya",
+			"text-1": "Savdo markazlarida va ko'chalarda promo aktsiyalar o'tkazish",
+			"text-2": "Maxsus tadbirlarda promo aktsiyalar o'tkazish",
+			"text-3": "Mahsulotlarni tatib ko'rish va namoyish qilishni tashkil etish",
+			"text-4": "Reklama materiallari va sovg'alar tarqatish"
+		},
+		"service-5": {
+			"title": "Tashqi reklama",
+			"text-1": "Reklama materiallarini dizayn qilish",
+			"text-2": "Tashqi reklama materiallarini tayyorlash",
+			"text-3": "Tahsqi reklama materiallarini o‘rnatish"
+		},
+		"service-6": {
+			"title": "Veb-saylar yaratish",
+			"text-1": "Veb sayt uchun dizayn yaratish",
+			"text-2": "Korporativ va sotuv veb-saytlari tayyorlash",
+			"text-3": "Wordpres sayt yasash",
+			"text-4": "Nolan veb-sayt yaratish"
+		}
+	}
+}

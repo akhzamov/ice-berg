@@ -1,0 +1,86 @@
+@import './vars.scss';
+@import './fonts.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $mainFont;
+	font-size: $mainFontSize;
+	font-weight: $mainFontWeight;
+	background: $body-bg-color;
+	color: $main-text-color;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: $default-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $primary-color;
+	border-radius: 12px;
+}
+
+input,
+textarea,
+select,
+button {
+	background: transparent;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin media($size) {
+	@media (max-width: #{$size}px) {
+		@content;
+	}
+}
+
+.container {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@include media(1440) {
+	.container {
+		max-width: 1120px;
+	}
+}
+
+@include media(1220) {
+	.container {
+		max-width: 1020px;
+	}
+}
+
+@include media(1080) {
+	.container {
+		max-width: 920px;
+	}
+}
+
+@include media(950) {
+	.container {
+		max-width: 100%;
+	}
+}
+@import './common.scss';
