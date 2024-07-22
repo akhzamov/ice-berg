@@ -1,7 +1,7 @@
 .popular-services {
-	background: rgba(231, 218, 237, 0.3);
+	background: rgba(0, 156, 183, 0.1);
 	padding: 46px 20px;
-	border: 1px solid #e7daed;
+	border: 1px solid #009bb7;
 
 	& .container {
 		display: flex;
@@ -18,6 +18,18 @@
 		color: #1a202c;
 		text-align: center;
 		margin-bottom: 73px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 60px;
+			height: 3px;
+			border-radius: 1px;
+			background: linear-gradient(225deg, #f76680 0%, #009bb7 100%);
+		}
 
 		@include media(1080) {
 			font-size: 40px;
@@ -41,14 +53,14 @@
 		display: grid;
 		grid-template-columns: repeat(4, 230px);
 		grid-auto-rows: auto;
-        gap: 30px;
-        justify-content: center;
+		gap: 30px;
+		justify-content: center;
 
 		@include media(920) {
-            grid-template-columns: repeat(2, 230px);
+			grid-template-columns: repeat(2, 230px);
 		}
 		@include media(480) {
-            grid-template-columns: repeat(1, 230px);
+			grid-template-columns: repeat(1, 230px);
 		}
 	}
 
@@ -73,7 +85,7 @@
 			font-size: 18px;
 			line-height: 1.2;
 			color: #1a202c;
-            text-align: center;
+			text-align: center;
 		}
 	}
 }

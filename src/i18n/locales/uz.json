@@ -38,7 +38,7 @@
 			"text-4": "Ma'lumotlarni tahlil qilish va qayta ishlash"
 		},
 		"service-4": {
-			"title": "Promo aksiya",
+			"title": "Promo aktsiya",
 			"text-1": "Savdo markazlarida va ko'chalarda promo aktsiyalar o'tkazish",
 			"text-2": "Maxsus tadbirlarda promo aktsiyalar o'tkazish",
 			"text-3": "Mahsulotlarni tatib ko'rish va namoyish qilishni tashkil etish",
@@ -51,11 +51,11 @@
 			"text-3": "Tahsqi reklama materiallarini o‘rnatish"
 		},
 		"service-6": {
-			"title": "Veb-saylar yaratish",
-			"text-1": "Veb sayt uchun dizayn yaratish",
+			"title": "Veb-saytlar yaratish",
+			"text-1": "Veb-sayt uchun dizayn yaratish",
 			"text-2": "Korporativ va sotuv veb-saytlari tayyorlash",
 			"text-3": "Wordpres sayt yasash",
-			"text-4": "Nolan veb-sayt yaratish"
+			"text-4": "Noldan veb-sayt yaratish"
 		}
 	},
 	"popular-services": {
@@ -79,5 +79,19 @@
 		"stats-2": "Bajarilgan proyektlar",
 		"stats-3": "Mijozlar izohi",
 		"stats-4": "Umumiy tajriba ( yil )"
+	},
+	"partners": {
+		"title": "Hamkorlarimiz"
+	},
+	"our-works": {
+		"title": "Bizning ishlar",
+		"works": {
+			"work-1": "Flayerlar",
+			"work-2": "Samakleykalar",
+			"work-3": "So'rovnomalar",
+			"work-4": "Promo aktsiyalar",
+			"work-5": "Tashqi reklamalar",
+			"work-6": "Veb-saytlar"
+		}
 	}
 }

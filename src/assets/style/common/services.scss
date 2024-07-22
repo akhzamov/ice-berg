@@ -1,7 +1,7 @@
 .services {
-	background: rgba(231, 218, 237, 0.3);
+	background: rgba(0, 156, 183, 0.1);
 	padding: 46px 0;
-	border: 1px solid #e7daed;
+	border: 1px solid #009bb7;
 
 	&__title {
 		width: 100%;
@@ -11,6 +11,18 @@
 		color: #1a202c;
 		text-align: center;
 		margin-bottom: 73px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 60px;
+			height: 3px;
+			border-radius: 1px;
+			background: linear-gradient(225deg, #f76680 0%, #009bb7 100%);
+		}
 
 		@include media(1080) {
 			font-size: 40px;

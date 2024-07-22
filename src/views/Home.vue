@@ -6,6 +6,8 @@ import Services from '@/components/Services/Services.vue'
 import PopularServices from '@/components/PopularServices/PopularServices.vue'
 import About from '@/components/About/About.vue'
 import Stats from '@/components/Stats/Stats.vue'
+import Partners from '@/components/Partners/Partners.vue'
+import OurWorks from "@/components/OurWorks/OurWorks.vue";
 
 useHead({
   title: computed(() => 'Ice Berg BTL'),
@@ -24,6 +26,8 @@ useHead({
     <Services />
     <PopularServices />
     <Stats />
+    <Partners />
+    <OurWorks />
   </main>
 </template>
 
