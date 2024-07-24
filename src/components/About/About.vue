@@ -1,42 +1,73 @@
 <script setup>
-import { MoreFilled } from '@element-plus/icons-vue'
 
-const activities = [
-    {
-        content: 'Custom icon',
-        timestamp: '2020 год',
-        size: 'large',
-        type: 'primary',
-    },
-    {
-        content: 'Custom color',
-        timestamp: '2018-04-03 20:46',
-        size: 'large',
-        type: 'primary',
-    },
-    {
-        content: 'Custom size',
-        timestamp: '2018-04-03 20:46',
-        size: 'large',
-        type: 'primary',
-    },
-    {
-        content: 'Custom hollow',
-        timestamp: '2018-04-03 20:46',
-        size: 'large',
-        type: 'primary',
-    },
-]
 </script>
 
 <template>
-    <el-timeline style="max-width: 600px">
-        <el-timeline-item v-for="(activity, index) in activities" :key="index" :icon="activity.icon"
-            :type="activity.type" :color="activity.color" :size="activity.size" :hollow="activity.hollow"
-            :timestamp="activity.timestamp">
-            {{ activity.content }}
-        </el-timeline-item>
-    </el-timeline>
+    <section class="about">
+        <div class="container">
+            <h3 class="about__title">{{ $t('about.title') }}</h3>
+            <p class="about__text">
+                {{ $t('about.text.main',
+                { company: '"Ice Berg BTL Agency"' })
+                }}
+            </p>
+            <div class="about__info">
+                <h4 class="about__info-title">{{ $t('about.title-goals') }}</h4>
+                <el-collapse class="about__info-collapse" accordion>
+                    <el-collapse-item :title="$t('about.view')">
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-goals.title-1') }}:</span>
+                            {{ $t('about.text-goals.text-1') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-goals.title-2') }}:</span>
+                            {{ $t('about.text-goals.text-2') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-goals.title-3') }}:</span>
+                            {{ $t('about.text-goals.text-3') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-goals.title-4') }}:</span>
+                            {{ $t('about.text-goals.text-4') }}
+                        </p>
+                    </el-collapse-item>
+                </el-collapse>
+                <h4 class="about__info-title">{{ $t('about.title-advantages') }}</h4>
+                <el-collapse class="about__info-collapse">
+                    <el-collapse-item :title="$t('about.view')">
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-advantages.title-1') }}:</span>
+                            {{ $t('about.text-advantages.text-1') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-advantages.title-2') }}:</span>
+                            {{ $t('about.text-advantages.text-2') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-advantages.title-3') }}:</span>
+                            {{ $t('about.text-advantages.text-3') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-advantages.title-4') }}:</span>
+                            {{ $t('about.text-advantages.text-4') }}
+                        </p>
+                        <p class="about__info-text">
+                            <span>- {{ $t('about.text-advantages.title-5') }}:</span>
+                            {{ $t('about.text-advantages.text-5') }}
+                        </p>
+                        <p class="about__info-text">
+                            {{
+                            $t('about.text-advantages.text-6',
+                            { company: '"Ice Berg BTL Agency"' }
+                            )
+                            }}
+                        </p>
+                    </el-collapse-item>
+                </el-collapse>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style scoped></style>

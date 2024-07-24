@@ -26,6 +26,7 @@ useHead({
     <Services />
     <PopularServices />
     <Stats />
+    <About />
     <Partners />
     <OurWorks />
   </main>

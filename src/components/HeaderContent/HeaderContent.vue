@@ -1,6 +1,14 @@
 <script setup>
 import DownloadIcon from '@/assets/images/download.svg'
 import HeaderContentImage from '@/assets/images/header-content-image.png'
+import { useMainStore } from '@/stores/main'
+
+const mainStore = useMainStore()
+const openModal = () => {
+    mainStore.modalOpen = true
+    mainStore.applicationModalActive = true
+    mainStore.category = 'Общая'
+}
 </script>
 
 <template>
@@ -10,7 +18,7 @@ import HeaderContentImage from '@/assets/images/header-content-image.png'
                 {{ $t('header-content.title') }}
             </h1>
             <div class="header-content__block-bottom">
-                <button class="header-content__block-bottom-req">
+                <button class="header-content__block-bottom-req" @click="openModal()">
                     {{ $t('header-content.application-button') }}
                 </button>
                 <a class="header-content__block-bottom-download" href="../../../public/favicon.ico" download="icon">

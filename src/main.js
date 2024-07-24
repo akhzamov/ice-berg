@@ -9,6 +9,7 @@ import App from './App.vue'
 import router from './router'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import phoneMask from './plugins/phone-mask'
 
 const head = createHead()
 const pinia = createPinia()
@@ -24,5 +25,6 @@ app.use(i18n)
 app.use(head)
 app.use(router)
 app.use(ElementPlus)
+app.use(phoneMask)
 app.mount('#app')
 initApp()
