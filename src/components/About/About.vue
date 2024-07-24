@@ -3,12 +3,12 @@
 </script>
 
 <template>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h3 class="about__title">{{ $t('about.title') }}</h3>
             <p class="about__text">
                 {{ $t('about.text.main',
-                { company: '"Ice Berg BTL Agency"' })
+                    { company: '"Ice Berg BTL Agency"' })
                 }}
             </p>
             <div class="about__info">
@@ -58,9 +58,9 @@
                         </p>
                         <p class="about__info-text">
                             {{
-                            $t('about.text-advantages.text-6',
-                            { company: '"Ice Berg BTL Agency"' }
-                            )
+                                $t('about.text-advantages.text-6',
+                                    { company: '"Ice Berg BTL Agency"' }
+                                )
                             }}
                         </p>
                     </el-collapse-item>

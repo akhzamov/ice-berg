@@ -53,7 +53,7 @@ const breakpoints = reactive({
 </script>
 
 <template>
-    <section class="services">
+    <section class="services" id="services">
         <h3 class="services__title">
             {{ $t('services.title') }}
         </h3>

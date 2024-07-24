@@ -6,6 +6,7 @@ import { ref, reactive } from 'vue'
 import { useMainStore } from '@/stores/main'
 import { useI18n } from "vue-i18n";
 import { useForm } from 'vee-validate';
+import Loader from '../Loader/Loader.vue'
 
 const { t } = useI18n()
 const mainStore = useMainStore()
@@ -25,6 +26,7 @@ const [phone, phoneAttrs] = defineField('phone')
 const phoneNumberMask = reactive({})
 
 const onSubmit = handleSubmit(async values => {
+    mainStore.loader = true
     const data = {
         name: values.name,
         phone: values.phone,
@@ -32,11 +34,13 @@ const onSubmit = handleSubmit(async values => {
     }
     const request = await axios.post(`${baseURL}/lead`, data)
         .then(res => {
+            mainStore.loader = false
             mainStore.applicationModalActive = false
             mainStore.successModalActive = true
             mainStore.successModalText = t('lead.success-send')
         })
         .catch(err => {
+            mainStore.loader = false
             mainStore.applicationModalActive = false
             mainStore.errorModalActive = true
             mainStore.errorModalText = t('modals.error-text')

@@ -129,11 +129,11 @@
 	"footer": {
 		"contacts": "Kontaktlar",
 		"work-time": "Ish vaqti",
-		"work-week": "Dush - Jum",
+		"work-week": "Dsh - Sh",
 		"address": "Ташкент"
 	},
-	"application-modal": {
-		"title": "Malumotlaringizni kiriting",
+	"application": {
+		"title": "Malumotlaringizni qoldiring va biz siz bilan bog'lanamiz",
 		"name": "Ismingiz",
 		"name-placeholder": "Sardor",
 		"phone": "Telefon raqamingiz",
@@ -143,7 +143,7 @@
 	},
 	"consultation-modal": {
 		"title": "Bepul maslahat",
-		"text": "Siz bizning veb-saytimizda 1 daqiqadan ko'proq vaqt davomida bo'lganingizni ko'rmoqdamiz. Telefon raqamingizni qoldiring va bizning eng yaxshi menejerimizdan loyihangiz bo'yicha BEPUL maslahat oling!",
+		"text": "Siz bizning veb-saytimizda 30 soniya vaqt davomida bo'lganingizni ko'rmoqdamiz. Telefon raqamingizni qoldiring va bizning eng yaxshi menejerimizdan loyihangiz bo'yicha BEPUL maslahat oling!",
 		"name": "Ismingiz",
 		"name-placeholder": "Sardor",
 		"phone": "Telefon raqamingiz",

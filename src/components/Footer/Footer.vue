@@ -1,22 +1,28 @@
 <script setup></script>
 
 <template>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="footer-top__items">
                     <div class="footer-top__items-title">{{ $t('footer.contacts') }}</div>
                     <ul class="footer-top__items-list">
                         <li>
-                            <a class="footer-top__items-text" href="tel:+998772889099" target="_blank">
+                            <a class="footer-top__items-text" href="tel:+998900112033" target="_blank">
                                 <img src="@/assets/images/footer/phone.svg" alt="" />
-                                +998 77 288 90 99
+                                +998 90 011 20 33
                             </a>
                         </li>
                         <li>
-                            <a class="footer-top__items-text" href="mailto:info@musait.tech" target="_blank">
+                            <a class="footer-top__items-text" href="tel:+998994875187" target="_blank">
+                                <img src="@/assets/images/footer/phone.svg" alt="" />
+                                +998 99 487 51 87
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-top__items-text" href="mailto:promocentertash@gmail.com" target="_blank">
                                 <img src="@/assets/images/footer/mail.svg" alt="" />
-                                info@musait.tech
+                                promocentertash@gmail.com
                             </a>
                         </li>
                     </ul>
@@ -26,7 +32,7 @@
                     <p class="footer-top__items-title">{{ $t('footer.work-time') }}</p>
                     <p class="footer-top__items-text">
                         <img src="@/assets/images/footer/clock.svg" alt="">
-                        09:00 - 18 00
+                        09:00 - 21:00
                     </p>
                     <p class="footer-top__items-text">
                         <img src="@/assets/images/footer/calendar.svg" alt="">
@@ -38,18 +44,18 @@
         <div class="footer-bottom">
             <div class="container">
                 <ul class="footer-bottom__list">
-                    <li>
+                    <!-- <li>
                         <a href="https://t.me/Musait_technologies" target="_blank">
                             <img src="@/assets/images/footer/telegram.svg" alt="" />
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="https://www.instagram.com/musait_technologies/" target="_blank">
+                        <a href="https://www.instagram.com/icebergbtl/" target="_blank">
                             <img src="@/assets/images/footer/instagram.svg" alt="" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/musait-technologies/" target="_blank">
+                        <a href="https://www.facebook.com/profile.php?id=61561572720311" target="_blank">
                             <img src="@/assets/images/footer/facebook.svg" alt="" />
                         </a>
                     </li>

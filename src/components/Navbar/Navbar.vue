@@ -25,19 +25,36 @@ const switchLanguage = ref(async (locale) => {
 });
 let languageMenu = ref(false)
 let burgerMenu = ref(false)
+
+const scrollIntoViewOption = (tapedLink) => {
+  const home = document.querySelector('#nav')
+  const services = document.querySelector('#services')
+  const about = document.querySelector('#about')
+  const contacts = document.querySelector('#footer')
+
+  if (tapedLink == 'home') {
+    home.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' })
+  } else if (tapedLink == 'services') {
+    services.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' })
+  } else if (tapedLink == 'about') {
+    about.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' })
+  } else if (tapedLink == 'contacts') {
+    contacts.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="container nav-content" @click="languageMenu = false" @mouseleave="languageMenu = false">
       <div class="nav-content__logo">
         <img :src="LogoBlackICon" alt="">
       </div>
       <ul class="nav-content__list" :class="{ active: burgerMenu }">
-        <li class="nav-content__item">{{ $t('navbar.home') }}</li>
-        <li class="nav-content__item">{{ $t('navbar.services') }}</li>
-        <li class="nav-content__item">{{ $t('navbar.about') }}</li>
-        <li class="nav-content__item">{{ $t('navbar.contacts') }}</li>
+        <li class="nav-content__item" @click="scrollIntoViewOption('home')">{{ $t('navbar.home') }}</li>
+        <li class="nav-content__item" @click="scrollIntoViewOption('services')">{{ $t('navbar.services') }}</li>
+        <li class="nav-content__item" @click="scrollIntoViewOption('about')">{{ $t('navbar.about') }}</li>
+        <li class="nav-content__item" @click="scrollIntoViewOption('contacts')">{{ $t('navbar.contacts') }}</li>
         <li class="nav-content__item language" @click.stop="languageMenu = true" @mouseenter="languageMenu = true">
           <img :src="LanguageIcon" alt="">
           <div class="nav-content__languages" v-if="languageMenu" @mouseleave="languageMenu = false">
