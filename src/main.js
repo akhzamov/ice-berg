@@ -1,30 +1,30 @@
 import './assets/style/main.scss'
 
-import { createApp } from 'vue'
+import { ViteSSG } from 'vite-ssg'
 import { createPinia } from 'pinia'
-import { createHead } from '@vueuse/head'
 import i18n from './i18n'
-import Trans from './i18n/translation'
 import App from './App.vue'
-import router from './router'
+import { router } from './router'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import phoneMask from './plugins/phone-mask'
 
-const head = createHead()
 const pinia = createPinia()
-const app = createApp(App)
 
-async function initApp() {
-	const initialLocale = Trans.guessDefaultLocale()
-	await Trans.switchLanguage(initialLocale)
-}
+export const createApp = ViteSSG(
+	App,
+	{ routes: router },
+	({ app, router, initialState }) => {
+		app.use(pinia)
+		app.use(i18n)
+		app.use(ElementPlus)
+		app.use(phoneMask)
 
-app.use(pinia)
-app.use(i18n)
-app.use(head)
-app.use(router)
-app.use(ElementPlus)
-app.use(phoneMask)
-app.mount('#app')
-initApp()
+		if (import.meta.env.SSR) initialState.pinia = pinia.state.value
+		else pinia.state.value = initialState.pinia || {}
+
+		router.beforeEach((to, from, next) => {
+			next()
+		})
+	}
+)

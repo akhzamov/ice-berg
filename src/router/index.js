@@ -1,34 +1,14 @@
-import { createRouter, createWebHistory, RouterView } from 'vue-router'
-
-import Tr from '@/i18n/translation'
 import Home from '../views/Home.vue'
 
-const router = createRouter({
-	history: createWebHistory(import.meta.env.VITE_BASE_URL),
-	routes: [
-		{
-			path: '/',
-			name: 'home',
-			component: Home,
-		},
-		// {
-		// 	path: '/:locale?',
-		// 	component: RouterView,
-		// 	beforeEnter: Tr.routeMiddleware,
-		// 	children: [
-		// 		{
-		// 			path: '',
-		// 			name: 'home',
-		// 			component: Home,
-		// 		},
-		// 	],
-		// },
-	],
-	scrollBehavior() {
-		return {
-			top: 0,
-		}
+export const router = [
+	{
+		path: '/',
+		name: 'home',
+		component: Home,
 	},
-})
-
-export default router
+	{
+		path: '/:catchAll(.*)',
+		name: 'NotFound',
+		component: ()=> import('../views/404.vue'),
+	},
+]

@@ -1,30 +1,33 @@
 {
-  "name": "ice-berg",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@vee-validate/yup": "^4.13.2",
-    "@vueuse/head": "^2.0.0",
-    "axios": "^1.7.2",
-    "element-plus": "^2.7.7",
-    "pinia": "^2.1.7",
-    "sass": "^1.77.8",
-    "swiper": "^11.1.5",
-    "vee-validate": "^4.13.2",
-    "vue": "^3.3.11",
-    "vue-i18n": "^9.13.1",
-    "vue-router": "^4.4.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "unplugin-auto-import": "^0.18.0",
-    "unplugin-vue-components": "^0.27.3",
-    "vite": "^5.0.10"
-  }
+	"name": "ice-berg",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite-ssg build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@vee-validate/yup": "^4.13.2",
+		"@vituum/vite-plugin-postcss": "^1.1.0",
+		"@vueuse/head": "^2.0.0",
+		"axios": "^1.7.2",
+		"element-plus": "^2.7.7",
+		"http-server": "^14.1.1",
+		"pinia": "^2.1.7",
+		"sass": "^1.77.8",
+		"swiper": "^11.1.5",
+		"vee-validate": "^4.13.2",
+		"vue": "^3.3.11",
+		"vue-i18n": "^9.13.1",
+		"vue-router": "^4.4.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.5.2",
+		"unplugin-auto-import": "^0.18.0",
+		"unplugin-vue-components": "^0.27.3",
+		"vite": "^5.0.10",
+		"vite-ssg": "^0.23.8"
+	}
 }
