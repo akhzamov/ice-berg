@@ -65,9 +65,11 @@
                         AbdulMalik Akhzamov
                     </a>
                 </div>
-                <div class="footer-bottom__text">
+                <a class="footer-bottom__text"
+                    href="https://yandex.uz/maps/10335/tashkent/house/YkAYdw9iSkcEQFprfX55eH9mZQ==/?ll=69.182657%2C41.289338&z=20.8"
+                    target="_blank">
                     {{ $t('footer.address') }}
-                </div>
+                </a>
             </div>
         </div>
     </footer>

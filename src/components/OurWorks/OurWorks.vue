@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import FlayerImage from '@/assets/images/ourWorks/flayer.webp'
 import QuestionImage from '@/assets/images/ourWorks/oprosnik.webp'
@@ -7,8 +7,13 @@ import PromoImage from '@/assets/images/ourWorks/promo.webp'
 import SamokleykaImage from '@/assets/images/ourWorks/samokleyka.webp'
 
 const { t } = useI18n()
-const selectedWorks = ref(t('our-works.works.work-1'))
-const works = [t('our-works.works.work-1'), t('our-works.works.work-2'), t('our-works.works.work-3'), t('our-works.works.work-4')]
+const selectedWorks = ref(1)
+const works = reactive([
+    { value: 1, label: computed(() => t('our-works.works.work-1')) },
+    { value: 2, label: computed(() => t('our-works.works.work-2')) },
+    { value: 3, label: computed(() => t('our-works.works.work-3')) },
+    { value: 4, label: computed(() => t('our-works.works.work-4')) },
+])
 
 const flayerWorks = reactive([
     { id: 1, img: FlayerImage, title: "Флаер для компании", position: 'right' },
@@ -44,7 +49,7 @@ const samokleykaWorks = reactive([
             </div>
             <div class="our-works__list">
                 <transition-group name="our-works-transition">
-                    <template v-if="selectedWorks == $t('our-works.works.work-1')">
+                    <template v-if="selectedWorks == 1">
                         <div class="our-works__item" :class="item.position" v-for="item in flayerWorks" :key="item.id">
                             <div class="our-works__item-info">
                                 <h4 class="our-works__item-title">
@@ -54,7 +59,7 @@ const samokleykaWorks = reactive([
                             <img :src="item.img" alt="" class="our-works__item-img">
                         </div>
                     </template>
-                    <template v-if="selectedWorks == $t('our-works.works.work-2')">
+                    <template v-if="selectedWorks == 2">
                         <div class="our-works__item" :class="item.position" v-for="item in samokleykaWorks"
                             :key="item.id">
                             <div class="our-works__item-info">
@@ -65,7 +70,7 @@ const samokleykaWorks = reactive([
                             <img :src="item.img" alt="" class="our-works__item-img">
                         </div>
                     </template>
-                    <template v-if="selectedWorks == $t('our-works.works.work-3')">
+                    <template v-if="selectedWorks == 3">
                         <div class="our-works__item" :class="item.position" v-for="item in questionWorks"
                             :key="item.id">
                             <div class="our-works__item-info">
@@ -76,7 +81,7 @@ const samokleykaWorks = reactive([
                             <img :src="item.img" alt="" class="our-works__item-img">
                         </div>
                     </template>
-                    <template v-if="selectedWorks == $t('our-works.works.work-4')">
+                    <template v-if="selectedWorks == 4">
                         <div class="our-works__item" :class="item.position" v-for="item in promoWorks" :key="item.id">
                             <div class="our-works__item-info">
                                 <h4 class="our-works__item-title">
