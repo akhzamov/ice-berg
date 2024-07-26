@@ -2,6 +2,7 @@
 import DownloadIcon from '@/assets/images/download.svg'
 import HeaderContentImage from '@/assets/images/header-content-image.png'
 import { useMainStore } from '@/stores/main'
+import { ref } from 'vue';
 
 const mainStore = useMainStore()
 const openModal = () => {
@@ -9,6 +10,7 @@ const openModal = () => {
     mainStore.applicationModalActive = true
     mainStore.category = 'Заявка'
 }
+const fileUrl = ref(process.env.BASE_URL + 'КП-Ice-Berg-Btl-Agency.pdf')
 </script>
 
 <template>
@@ -21,8 +23,7 @@ const openModal = () => {
                 <button class="header-content__block-bottom-req" @click="openModal()">
                     {{ $t('header-content.application-button') }}
                 </button>
-                <a class="header-content__block-bottom-download" href="../../../public/КП-Ice-Berg-Btl-Agency.pdf"
-                    download="КП-Ice-berg-btl-agency.pdf">
+                <a class="header-content__block-bottom-download" :href="fileUrl" download="КП-Ice-berg-btl-agency.pdf">
                     <span class="icon">
                         <img :src="DownloadIcon" alt="">
                     </span>
