@@ -24,7 +24,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: computed(() => 'Ice Berg BTL agency website'),
+      content: computed(() => 'Профессиональное агентство в сфере BTL-маркетинга, предоставляющее комплексные решения для продвижения вашего бизнеса.'),
     },
     {
       name: 'keywords',

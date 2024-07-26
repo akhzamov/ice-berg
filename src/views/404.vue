@@ -7,7 +7,7 @@ useHead({
     meta: [
         {
             name: "description",
-            content: computed(() => 'Ice Berg BTL agency 404 page'),
+            content: computed(() => 'Страница не найдена'),
         },
         {
             name: 'keywords',

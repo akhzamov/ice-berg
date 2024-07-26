@@ -29,7 +29,7 @@ const onSubmit = handleSubmit(async values => {
     const data = {
         name: values.name,
         phone: values.phone,
-        category: mainStore.category
+        category: 'Заявка'
     }
     const request = await axios.post(`${baseURL}/lead`, data)
         .then(res => {

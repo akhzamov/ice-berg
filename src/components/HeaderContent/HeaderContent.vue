@@ -7,7 +7,7 @@ const mainStore = useMainStore()
 const openModal = () => {
     mainStore.modalOpen = true
     mainStore.applicationModalActive = true
-    mainStore.category = 'Общая'
+    mainStore.category = 'Заявка'
 }
 </script>
 
@@ -21,7 +21,8 @@ const openModal = () => {
                 <button class="header-content__block-bottom-req" @click="openModal()">
                     {{ $t('header-content.application-button') }}
                 </button>
-                <a class="header-content__block-bottom-download" href="../../../public/favicon.ico" download="icon">
+                <a class="header-content__block-bottom-download" href="../../../public/КП-Ice-Berg-Btl-Agency.pdf"
+                    download="КП-Ice-berg-btl-agency.pdf">
                     <span class="icon">
                         <img :src="DownloadIcon" alt="">
                     </span>
