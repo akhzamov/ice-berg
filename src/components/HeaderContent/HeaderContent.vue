@@ -10,7 +10,7 @@ const openModal = () => {
     mainStore.applicationModalActive = true
     mainStore.category = 'Заявка'
 }
-const fileUrl = ref(process.env.BASE_URL + 'КП-Ice-Berg-Btl-Agency.pdf')
+const fileUrl = ref('/КП-Ice-Berg-Btl-Agency.pdf')
 </script>
 
 <template>
